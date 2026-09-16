@@ -6,8 +6,7 @@ public class Cliente {
     }
 
     static void verPelicula(String pelicula) {
-        HomeTheaterManager manager = new HomeTheaterManager();
-        manager.encender();
-        manager.verPelicula(pelicula);
+        HomeTheaterManager.getInstance().encender();
+        HomeTheaterManager.getInstance().verPelicula(pelicula);
     }
 }
